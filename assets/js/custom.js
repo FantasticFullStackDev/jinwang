@@ -11,7 +11,23 @@ function w3_close() {
 
 var slideIndex = 1;
 (function () {
-    showDivs(slideIndex);
+    var n = 1;
+    var i;
+    var x = document.getElementsByClassName("slides");
+    var p = document.getElementsByClassName("paginations");
+    slideIndex = n;
+    if (n > x.length) {slideIndex = 1;}
+    if (n < 1) {slideIndex = x.length;}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    for (i = 0; i < p.length; i++) {
+        p[i].className = p[i].className.replace("w3-black", "w3-hover-black");  
+    }
+    x[slideIndex-1].style.display = "block";  
+    p[slideIndex-1].className = p[slideIndex-1].className.replace("w3-hover-black", "w3-black");
+    var elem = document.getElementById("about");
+    elem.scrollIntoView({behavior: 'smooth'});
 })();
 
 function plusDivs(n) {
