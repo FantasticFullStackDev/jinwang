@@ -4,9 +4,10 @@ function w3_open() {
     // document.getElementById("myOverlay").style.display = "block";
 }
  
-function w3_close() {
+function w3_close(target) {
     document.getElementById("mySidebar").style.display = "none";
-    // document.getElementById("myOverlay").style.display = "none";
+    var elem = document.getElementById(target);
+    elem.scrollIntoView({behavior: 'smooth'});
 }
 
 var slideIndex = 1;
