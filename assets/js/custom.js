@@ -11,13 +11,9 @@ function w3_close() {
 
 var slideIndex = 1;
 (function () {
-    var n = 1;
     var i;
     var x = document.getElementsByClassName("slides");
     var p = document.getElementsByClassName("paginations");
-    slideIndex = n;
-    if (n > x.length) {slideIndex = 1;}
-    if (n < 1) {slideIndex = x.length;}
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
     }
