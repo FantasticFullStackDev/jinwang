@@ -57,7 +57,9 @@ function showDivs(n) {
 function sendMail() {
     var name = $("#Name").val();
     var title = $("#Title").val();
-    var message = $("#Message").html();
+    var message = $("#Message").val();
+    message.replace("\n", "<br/>");
+    console.log(message);
     if(title != "" && message != "") {
         window.open("mailto:jinwangdev531@gmail.com?subject=" + title + "&body=" + message + "<br/>" + name);
     }
