@@ -58,7 +58,7 @@ function sendMail() {
     var name = $("#Name").val();
     var title = $("#Title").val();
     var message = $("#Message").val();
-    if(name != "" && title != "" && message != "") {
-        window.open("mailto:jinwangdev531@gmail.com?subject=" + title + "&body=" + message + "\n" + name);
+    if(title != "" && message != "") {
+        window.open("mailto:jinwangdev531@gmail.com?subject=" + title + "&body=" + message + "<br/>" + name);
     }
 }
