@@ -55,12 +55,11 @@ function showDivs(n) {
 }
 
 function sendMail() {
-    var name = $("#Name").val();
+    // var name = $("#Name").val();
     var title = $("#Title").val();
     var message = $("#Message").val();
-    message = message.replace(/\n/g, "<br />");
     console.log(message);
     if(title != "" && message != "") {
-        window.open("mailto:jinwangdev531@gmail.com?subject=" + title + "&body=" + message + "<br/> Best Regards <br /> &nbsp;&nbsp;&nbsp;" + name);
+        window.open("mailto:jinwangdev531@gmail.com?subject=" + title + "&body=" + message);
     }
 }
