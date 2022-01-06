@@ -14,8 +14,8 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
-  <div class="w3-button w3-hide-large w3-xlarge w3-hover-text-grey w3-card-4" style="position: fixed; top: 16px; left: 24px; background-color: white; border-radius: 50%;" onclick="w3_open()"><i class="fa fa-bars"></i></div>
-  <div class="w3-button w3-xlarge w3-hover-text-grey w3-card-4 w3-text-white" title="Download Resume" style="position: fixed; bottom: 16px; right: 24px; background-color: grey; border-radius: 25%; z-index: 100;">
+  <div class="w3-button  w3-hover-black w3-border w3-border-white w3-hide-large w3-xlarge w3-card-4" style="position: fixed; top: 16px; left: 24px; background-color: white; border-radius: 50%;" onclick="w3_open()"><i class="fa fa-bars"></i></div>
+  <div class="w3-button w3-hover-black w3-border w3-border-white w3-xlarge w3-card-4 w3-text-white" title="Download Resume" style="position: fixed; bottom: 16px; right: 24px; background-color: grey; border-radius: 25%; z-index: 100;">
     <a href="https://cvdesignr.com/p/6180ec0399755" target="_blank">
       <i class="fa fa-download"></i>
     </a>
@@ -30,11 +30,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
   <hr style="width: 80%; margin-left: 10%;"/>
   <div class="w3-bar-block" style="padding-left: 20px; margin-top: 20px;">
-    <a onclick="w3_close('about')" class="w3-bar-item w3-button w3-padding w3-hover w3-hover-text-white"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a onclick="w3_close('skills')" class="w3-bar-item w3-button w3-padding w3-hover w3-hover-text-white"><i class="fa fa-cogs fa-fw w3-margin-right"></i>SKILLS</a> 
-    <a onclick="w3_close('rate')" class="w3-bar-item w3-button w3-padding w3-hover w3-hover-text-white"><i class="fa fa-clock-o fa-fw w3-margin-right"></i>RATES</a> 
-    <a onclick="w3_close('portfolio')" class="w3-bar-item w3-button w3-padding w3-hover w3-hover-text-white"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a onclick="w3_close('contact')" class="w3-bar-item w3-button w3-padding w3-hover w3-hover-text-white"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    <a onclick="w3_close('about')" class="w3-bar-item w3-button w3-hover-black w3-padding w3-hover w3-hover-text-white"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a onclick="w3_close('skills')" class="w3-bar-item w3-button  w3-hover-black w3-padding w3-hover w3-hover-text-white"><i class="fa fa-cogs fa-fw w3-margin-right"></i>SKILLS</a> 
+    <a onclick="w3_close('rate')" class="w3-bar-item w3-button  w3-hover-black w3-padding w3-hover w3-hover-text-white"><i class="fa fa-clock-o fa-fw w3-margin-right"></i>RATES</a> 
+    <a onclick="w3_close('portfolio')" class="w3-bar-item w3-button  w3-hover-black w3-padding w3-hover w3-hover-text-white"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a onclick="w3_close('contact')" class="w3-bar-item w3-button  w3-hover-black w3-padding w3-hover w3-hover-text-white"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
 
 </nav>
@@ -48,10 +48,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Images of Me -->
   <div class="w3-row-padding" style="padding: 0px 16px;">
     <div class="w3-col m6" style="padding: 0px;">
-      <img  class="w3-card-4 w3-hover-opacity" src="./assets/images/avatar_1.jpg" alt="Me" style="width:100%;">
+      <img  class="w3-card-4" src="./assets/images/avatar_1.jpg" alt="Me" style="width:100%;">
     </div>
     <div class="w3-col m6" style="padding: 0px;">
-      <img class="w3-card-4 w3-hover-opacity" src="./assets/images/avatar_2.png" alt="Me" style="width:100%;">
+      <img class="w3-card-4" src="./assets/images/avatar_2.png" alt="Me" style="width:100%;">
     </div>
   </div>
 
@@ -197,7 +197,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>    
     <hr style="border-color: lightgrey;">
     <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+      <button class="w3-button w3-blue w3-hover-black w3-padding-large w3-margin-top w3-margin-bottom">
         <a href="https://cvdesignr.com/p/6180ec0399755" target="_blank">
           <i class="fa fa-download w3-margin-right"></i>Download Resume
         </a>
@@ -546,7 +546,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <input class="w3-input w3-border" type="text" id="Message" required>
       <!-- <textarea id="Message" rows="4" style="width: 100%; border: 0px solid grey;"></textarea> -->
     </div>
-    <button id="sendMail" class="w3-button w3-blue w3-margin-bottom" onclick="sendMail()">Send Message</button>
+    <button id="sendMail" class="w3-button w3-blue w3-hover-black w3-margin-bottom" onclick="sendMail()">Send Message</button>
   </div>
   
   <div class="w3-black w3-center w3-padding-24"> Last Updated On Jan 1 2022 </a></div>
